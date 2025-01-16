@@ -1,0 +1,62 @@
+body {
+    font-family: monospace;
+}
+
+tr, td, th {
+    border: 2px solid black;
+    text-align: left;
+}
+
+td,th {
+    padding: 0.5rem;
+}
+
+legend {
+    font-weight: 600;
+}
+
+fieldset {
+    border: 2px solid black;
+}
+
+dialog[open] {
+    border: 2px solid black;
+    &::backdrop {
+        background: rgba(255,255,255,0.75);
+        backdrop-filter: blur(2px);
+    }
+
+    input[type=text] {
+        border: 2px solid black;
+        height: 32px;
+        font-weight: 600;
+        font-family: monospace;
+        padding: 0 0.5rem;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    border: 2px solid black;
+    background: white;
+    font-family: monospace;
+    font-weight: 600;
+
+    &:hover {
+        cursor: pointer;
+        background-color: black;
+        color: white;
+    }
+}
+
+hr {
+    border: none;
+    border-top: 2px solid black;
+    margin-left: -0.75rem;
+    margin-right: -0.70rem;
+    margin-top: 0.55rem;
+    margin-bottom: 0.55rem;
+}
